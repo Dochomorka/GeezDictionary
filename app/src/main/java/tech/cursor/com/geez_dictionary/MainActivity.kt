@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
      * 3. after selecting, find the option 'Convert Java File to Kotlin File' and select it!
      *
      * Android Studio will do the rest for You!
+     * 2018, 2011
+     * wednesday 2019 january 2
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
