@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull
  * synonyms: word Synonyms
  * antonyms: word antonyms
  */
-@Entity(tableName = "word")
+@Entity(tableName = "word_table")
 data class Word(
     @PrimaryKey(autoGenerate = true)val id: Int,
     @NotNull val word: String,

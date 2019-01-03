@@ -2,6 +2,9 @@ package tech.cursor.com.geez_dictionary
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,5 +25,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        return super.onCreateOptionsMenu(menu)
+        val menuInflater = getMenuInflater()
+        menuInflater.inflate(R.menu.main_activity_option,menu!!)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        return super.onOptionsItemSelected(item)
+        val menuItemId = item!!.itemId
+
+        when (menuItemId)
+        {
+            R.id.setting -> {
+            Toast.makeText(this,"Holla",Toast.LENGTH_LONG).show()
+        }
+        }
+
+        return true
     }
 }
